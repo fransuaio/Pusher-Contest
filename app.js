@@ -42,6 +42,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const ops = require('./models/ops');
 
+const PORT = process.env.PORT || 8989;
+
 const pusher = new Pusher({
   appId: '524994',
   key: '186e76af49a25c6908a1',
@@ -119,6 +121,6 @@ app.use(function (err, req, res, next) {
   res.render('error');
 });
 
-app.listen(8989, () => {
+app.listen(PORT, () => {
   console.log('Hello World!');
 });
