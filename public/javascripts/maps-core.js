@@ -11,13 +11,13 @@
         });
 
         var boundsAr = new google.maps.LatLngBounds(
-            new google.maps.LatLng(-40.675147, -68.542969));
+            new google.maps.LatLng(-35.675147, -68.542969));
 
         var boundsCl = new google.maps.LatLngBounds(
-            new google.maps.LatLng(-27.447487, -70.673676));        
+            new google.maps.LatLng(-27.447487, -74.673676));        
 
         var boundsCo = new google.maps.LatLngBounds(
-            new google.maps.LatLng(4.570868, -74.297333));        
+            new google.maps.LatLng(2.970868, -74.297333));        
 
         var boundsEc = new google.maps.LatLngBounds(
             new google.maps.LatLng(10.500000, -66.916664));        
@@ -26,20 +26,22 @@
             new google.maps.LatLng(-13.189967, -76.015152));
       
         var boundsEc = new google.maps.LatLngBounds(
-            new google.maps.LatLng(-1.831239, -78.183406));                
+            new google.maps.LatLng(-1.831239, -81.183406));                
 
         var boundsBo = new google.maps.LatLngBounds(
-            new google.maps.LatLng(-16.290154, -63.588653));
+            new google.maps.LatLng(-17.290154, -67.588653));
 
         var boundsPa = new google.maps.LatLngBounds(
             new google.maps.LatLng(-23.842503, -58.443832));        
         
         var boundsUr = new google.maps.LatLngBounds(
-            new google.maps.LatLng(-32.522779, -55.765835));
+            new google.maps.LatLng(-33.522779, -57.765835));
 
         var boundsBr = new google.maps.LatLngBounds(
-            new google.maps.LatLng(-8.533773, -50.625290));        
+            new google.maps.LatLng(-9.433773, -58.625290));        
 
+        var boundsMar = new google.maps.LatLngBounds(
+            new google.maps.LatLng(-13.189967, -98.015152));
 
         var list = ['ar', 'br', 'cl', 'co', 'ec', 'pa', 'pe', 'bo', 'ur'];
 
@@ -54,7 +56,7 @@
         overlay = new USGSOverlay(boundsPe, list[6], map);
         overlay = new USGSOverlay(boundsBo, list[7], map);
         overlay = new USGSOverlay(boundsUr, list[8], map);
-        
+        overlay = new USGSOverlay(boundsMar, 'mar', map);
       }
 
       /** @constructor */
