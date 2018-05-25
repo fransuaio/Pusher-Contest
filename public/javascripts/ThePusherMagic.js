@@ -11,14 +11,14 @@ var channel = pusher.subscribe('my-channel');
 
         var countrys = data.message[0];
         var listCountry = Object.keys(countrys)
-        var arN = country[listCountry[0]]
-        var brN = country[listCountry[1]]
-        var clN = country[listCountry[2]]
-        var coN = country[listCountry[3]]
-        var ecN = country[listCountry[4]]
-        var paN = country[listCountry[5]]
-        var peN = country[listCountry[6]]
-        var urN = country[listCountry[7]]        
+        var arN = countrys[listCountry[0]]
+        var brN = countrys[listCountry[1]]
+        var clN = countrys[listCountry[2]]
+        var coN = countrys[listCountry[3]]
+        var ecN = countrys[listCountry[4]]
+        var paN = countrys[listCountry[5]]
+        var peN = countrys[listCountry[6]]
+        var urN = countrys[listCountry[7]]        
         $("#ar").children().text(arN)
         $("#br").children().text(brN)
         $("#cl").children().text(clN)
