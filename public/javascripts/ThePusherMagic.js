@@ -10,7 +10,7 @@ var channel = pusher.subscribe('my-channel');
     channel.bind('saveMongoDb', function(data) {
 
         var countrys = data.message[0];
-        var listCountry = Object.keys(country)
+        var listCountry = Object.keys(countrys)
         var arN = country[listCountry[0]]
         var brN = country[listCountry[1]]
         var clN = country[listCountry[2]]
