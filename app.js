@@ -45,11 +45,11 @@ const ops = require('./models/ops');
 const PORT = process.env.PORT || 8989;
 
 const pusher = new Pusher({
-  appId: '524994',
-  key: '186e76af49a25c6908a1',
-  secret: '291104dba774bf8b8592',
-  cluster: 'us2',
-  encrypted: true,
+  appId: process.env.appId,
+  key: process.env.key,
+  secret: process.env.secret,
+  cluster: process.env.cluster,
+  encrypted: process.env.encrypted,
 });
 
 const randonsCountry = {
