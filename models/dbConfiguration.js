@@ -2,16 +2,16 @@ const mongoose = require('mongoose');
 
 const moment = require('moment');
 
-//mongoose.connect('mongodb://localhost/pusherProjectDB');
-mongoose.connect('mongodb://indigo@ds235860.mlab.com:35860/pusher-contest-db', {
-    auth: {
-      user: 'indigo',
-      password: 'bc9k07*/'
-    }
-  })
+require('dotenv').config()
+
+mongoose.connect(process.env.DB_URL, {
+  auth: {
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+  }
+})
   .then(() => console.log('connection successful'))
   .catch((err) => console.error(err));
-
 
 const countryInitialState = {
   ar: 57127,

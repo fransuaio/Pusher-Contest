@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "node-dev app.js"
   },
   "keywords": [
     "pusher",
@@ -20,6 +21,7 @@
     "body-parser": "^1.18.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "dotenv": "^6.0.0",
     "ejs": "~2.5.7",
     "express": "~4.16.0",
     "express-ejs-layouts": "^2.4.0",
@@ -31,7 +33,6 @@
     "pusher": "^2.0.0",
     "random-number": "0.0.9"
   },
-
   "devDependencies": {
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.12.0"

@@ -42,14 +42,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const ops = require('./models/ops');
 
-const PORT = process.env.PORT || 8989;
+const PORT = process.env.PORT;
 
 const pusher = new Pusher({
-  appId: '524994',
-  key: '186e76af49a25c6908a1',
-  secret: '291104dba774bf8b8592',
-  cluster: 'us2',
-  encrypted: true,
+  appId: process.env.APP_ID,
+  key: process.env.PUSHER_KEY,
+  secret: process.env.SECRET,
+  cluster: process.env.CLUSTER,
+  encrypted: process.env.ENCRYPTED,
 });
 
 const randonsCountry = {
